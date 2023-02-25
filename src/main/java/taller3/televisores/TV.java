@@ -79,7 +79,10 @@ public class TV {
 	}
 
 	public void setVolumen(int volumen) {
-		this.volumen = volumen;
+		if (estado==true && 0<canal && canal<7) {
+			this.volumen = volumen;
+		}
+		
 	}
 
 	public int getCanal() {
@@ -87,7 +90,9 @@ public class TV {
 	}
 
 	public void setCanal(int canal) {
-		this.canal = canal;
+		if (estado==true && 1<=canal && canal<=120) {
+			this.canal = canal;
+		}
 	}
 
 	public boolean getEstado() {
@@ -98,10 +103,10 @@ public class TV {
 		this.estado = estado;
 	}
 	
-	public void setNumTV(int numTV) {
-		this.numTV=numTV;
+	public static void setNumTV(int numTV) {
+		TV.numTV=numTV;
 	}
-	public int getNumTV() {
+	public static int getNumTV() {
 		return numTV;
 	}
 	
