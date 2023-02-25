@@ -97,7 +97,10 @@ public class TV {
 	public void setEstado(boolean estado) {
 		this.estado = estado;
 	}
-
+	
+	public void setNumTV(int numTV) {
+		this.numTV=numTV;
+	}
 	public int getNumTV() {
 		return numTV;
 	}

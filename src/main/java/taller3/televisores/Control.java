@@ -26,7 +26,9 @@ public class Control {
 	public void turnOff() {
 		tv.turnOff();
 	}
-	
+	public void setCanal() {
+		tv.setCanal(0);
+	}
 
 	public TV getTv() {
 		return tv;
